@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments Hub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      background: linear-gradient(45deg, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .btn {
+      background: #111;
+      color: #fff;
+      padding: 12px 20px;
+      border: 2px solid #0072ff;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0072ff;
+      color: #fff;
+      border-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> XML Assignments</h1>
+    <div class="btn-grid">
+      <a class="btn" href="employees.xml">Employee XML</a>
+      <a class="btn" href="students.xml">Student XML</a>
+      <a class="btn" href="library.xml">Library XML</a>
+      <a class="btn" href="Books.xml">Books XML</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+books { 
+	color: white; 
+	background-color : rgb(39, 181, 51); 
+	width: 100%; 
+} 
+heading { 
+	color: rgb(34, 132, 171); 
+	font-size : 40px; 
+	background-color : rgb(23, 168, 187); 
+} 
+heading, title, author, publisher, edition { 
+	display : flex; 
+} 
+title { 
+	font-size : 25px; 
+	font-weight : bold; 
+} 
