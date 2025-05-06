@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments Hub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #2b1055, #7597de);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      padding: 50px 40px;
+      max-width: 550px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, #d8b9d2, #b8b8ee, #a2d8d8, #b5dfd7);
+      animation: rotate 6s linear infinite;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      inset: 5px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+  
+    .container > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      background: linear-gradient(to right, #ff4f00, #ff0066);
+
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #ff0066, #ff4f00);
+      color: #fff;
+      padding: 12px 20px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+      position: relative;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #ff0066, #ff4f00);
+      border-radius: 20px;
+      z-index: -1;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      color: #000;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 10px #ff0066, 0 0 25px #ff0066;
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Assignments</h1>
+    <div class="btn-grid">
+
+      <a class="btn" href="/CSS/Inline,Internal,External,/2ND.HTML">2</a>
+      <a class="btn" href="/CSS/Inline,Internal,External,/3RD.html">3</a>
+      <a class="btn" href="/CSS/Inline,Internal,External,/4TH.html">4</a>
+      <a class="btn" href="/CSS/Inline,Internal,External,/5TH.HTML">5</a>
+      <a class="btn" href="/CSS/Inline,Internal,External,/9TH.HTML">9</a>
+      <a class="btn" href="/CSS/internal.html">Internal</a>
+      <a class="btn" href="/CSS/external.html">External</a>
+      <a class="btn" href="/CSS/Selector/index2.html">Selector</a>
+      <a class="btn" href="/CSS/TimeTable/TimeTable.html">Timetable</a>
+      <a class="btn" href="/CSS/website/index1.html">Website</a>
+    </div>
+  </div>
+</body>
+</html>
