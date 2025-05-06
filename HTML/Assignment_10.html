@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resume</title>
+    <style>
+        /* Use Google Fonts for a modern and clean font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            background-color: #f4f7fc;
+        }
+        
+        /* Container for the resume */
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: auto;
+            border: 2px solid #eee;
+        }
+
+        h1, h2 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Styling for the name */
+        h1 {
+            color: #2563eb;
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /* Contact information styling */
+        .contact {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Profile photo styling */
+        .profile-photo {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #2563eb;
+            margin-right: 20px;
+        }
+
+        /* Flexbox layout for name and photo */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #1f2937;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+        }
+
+        /* Styling for the list items */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+
+        /* Styling for the education details */
+        .education li {
+            font-size: 16px;
+        }
+
+        /* Design tweaks for better structure */
+        .section p, .section ul {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .section ul li {
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Profile Image -->
+        <div class="header">
+            <img src="/HTML/image/sumit.jpg" alt="Profile Picture" class="profile-photo">
+            <div>
+                <h1>Sumit Shendage</h1>
+                <p class="contact">
+                    Email: <a href="mailto:shendagesumit22@gmail.com">shendagesumit22@gmail.com</a> | 
+                    Phone: 7276705655 | Location: Kolhapur, Maharashtra
+                    <br>LinkedIn: <a href="https://www.linkedin.com/in/sumit-shendage-0341412b3/" target="_blank">https://www.linkedin.com/in/sumit-shendage-0341412b3/</a> | 
+                    GitHub: <a href="https://github.com/Sumitshendage" target="_blank">https://github.com/Sumitshendage</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Objective</h2>
+            <p>Motivated Computer Science student seeking an internship or entry-level position where I can apply my programming skills, problem-solving abilities, and passion for technology to contribute to a dynamic team.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul class="education">
+                <li><strong>Shivaji University</strong> — Bachelor of Science in Computer Science (Expected Graduation: May 2027)</li>
+                <li><strong>College:</strong> D Y Patil College of Engineering and Technology, Kolhapur</li>
+                <li><strong>GPA:</strong> 3.8/4.0</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Problem Solving and Algorithms</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Personal Portfolio Website</strong> — Designed and developed a personal website showcasing my projects and skills using HTML, CSS, and JavaScript.</li>
+                <li><strong>Weather App</strong> — Created a simple app that fetches weather data using an API and displays it to the user.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>DSA Certificate</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Extracurricular Activities</h2>
+            <ul>
+                <li>Member, Computer Science Club</li>
+                <li>Member, Rotaract Club</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

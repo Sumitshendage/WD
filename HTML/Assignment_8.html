@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Table Schedule</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Container for title and personal info */
+        .header-info {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header-info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        /* Heading Styling */
+        h1, h2, h3 {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: #3498db;
+        }
+
+        h2, h3 {
+            font-size: 1.5rem;
+            margin: 5px 0;
+        }
+
+        /* Table Styling */
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid #2c3e50;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #2c3e50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        td {
+            background-color: #ecf0f1;
+            font-size: 1.1rem;
+            height: 60px;
+            color: #34495e;
+        }
+
+        .subject {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .lunch {
+            background-color: #95a5a6;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Row Hover Effect */
+        tr:nth-child(even) td {
+            background-color: #bdc3c7;
+        }
+
+        tr:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Table Cell Styles */
+        .subject {
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                font-size: 1rem;
+            }
+
+            .header-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-info">
+        <p>Name: Sumit Shendage</p>
+        <p>Div: SY-B</p>
+        <p>Roll No: 02</p>
+    </div>
+
+    <h1>TimeTable</h1>
+    <h2>D.Y. Patil College of Engineering & Technology, Kolhapur</h2>
+    <h3>Department of Computer Science & Engineering <br> Time Table 2024-2025 (SEM-II)</h3>
+
+    <table>
+        <tr>
+            <th>Day & Time</th>
+            <th>9:00 to 10:00</th>
+            <th>10:00 to 11:00</th>
+            <th class="lunch" rowspan="7">BREAK</th>
+            <th>11:15 to 12:15</th>
+            <th>12:15 to 1:15</th>
+            <th class="lunch" rowspan="7">BREAK</th>
+            <th>2:00 to 3:00</th>
+            <th>3:00 to 4:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td class="subject" colspan="2" style="text-align:left;">
+                S1-DSL(SSKokate)(Lab 8)<br>
+                S2-AOOC(KBK)(Lab 5)<br>
+                S3-TPMS(PRP)(Lab 11)<br>
+                S4-TTL(SPS)(Lab 10)<br>
+                S5-TTL(IPT)(Lab 12)<br>
+                S6-WD(SSKORE)(Lab 2)
+            </td>
+            <td class="subject">DS(L)<br>SSKokate</td>
+            <td class="subject">MDM-II(L)<br>(VVM)</td>
+            <td class="subject">AT(L)<br>(KAB)</td>
+            <td class="subject">ES(L)<br>PA</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td class="subject" colspan="2" style="text-align:left;">
+                S1-WD(SSKORE)(Lab 2)<br>
+                S2-DSL(SSKokate)(Lab 8)<br>
+                S3-AOOC(KBK)(Lab 5)<br>
+                S4-TPMS(PRP)(Lab 11)<br>
+                S5-TTL(SPS)(Lab 10)<br>
+                S6-TTL(IPT)(Lab 12)
+            </td>
+            <td class="subject">AT(L)<br>(KAB)</td>
+            <td class="subject">DS(L)<br>SSKokate</td>
+            <td class="subject">ES(L)<br>PA</td>
+            <td class="subject">WD(L)<br>SSKORE</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td class="subject" colspan="2" style="text-align:left;">
+                S1-TTL(IPT)(Lab 12)<br>
+                S2-WD(SSKORE)(Lab 2)<br>
+                S3-DSL(SSKokate)(Lab 8)<br>
+                S4-AOOC(KBK)(Lab 5)<br>
+                S5-TPMS(PRP)(Lab 11)<br>
+                S6-TTL(SPS)(Lab 10)
+            </td>
+            <td class="subject">AOOC(L)<br>(KAK)</td>
+            <td class="subject">MDM-II(L)<br>(VVM)</td>
+            <td class="subject">Dept. Activity</td>
+            <td class="subject">Dept. Activity</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td class="subject" colspan="2" style="text-align:left;">
+                S1-TPMS(PRP)(Lab 11)<br>
+                S2-TTL(SPS)(Lab 10)<br>
+                S3-TTL(IPT)(Lab 12)<br>
+                S4-WD(SSKORE)(Lab 2)<br>
+                S5-DSL(SSKokate)(Lab 8)<br>
+                S6-AOOC(KBK)(Lab 5)
+            </td>
+            <td class="subject" colspan="2" style="text-align:left;">
+                S1-AOOC(KBK)(Lab 5)<br>
+                S2-TPMS(PRP)(Lab 11)<br>
+                S3-TTL(AAS)(Lab 10)<br>
+                S4-TTL(NNP)(Lab 12)<br>
+                S5-WD(SSKORE)(Lab 2)<br>
+                S6-DSL(SSKokate)(Lab 8)
+            </td>
+            <td class="subject">TPMS(L)<br>(PRP)</td>
+            <td class="subject">OEC-II</td>
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td class="subject">LL(L)<br>(ASY, RSJ, MVB)</td>
+            <td class="subject">LL(L)<br>(ASY, RSJ, MVB)</td>
+            <td class="subject">LL(L)<br>*self</td>
+            <td class="subject">LL(L)<br>*self</td>
+            <td class="subject">Dept. Activity</td>
+            <td class="subject">Dept. Activity</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 D.Y. Patil College of Engineering & Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
